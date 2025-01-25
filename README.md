@@ -6,6 +6,9 @@ The pyCORN repository contains an amazing [shiny web app](http://pycornweb.appsp
 You can just drag and drop your report.res file from Unicorn software and get your interactive view of chromatogram.
 If you want to customize the elements in your chromatogram, then this Repo can help you out in a easy was.
 
+You can find a reference using Size Exclusion Chromatography to characterize different snake venom samples here:
+>Gren ECK, Kitano ES, Andrade-Silva D, Iwai LK, Reis MS, Menezes MC, Serrano SMT. Comparative analysis of the high molecular mass subproteomes of eight Bothrops snake venoms. Comp Biochem Physiol Part D Genomics Proteomics. 2019 Jun;30:113-121. doi: 10.1016/j.cbd.2019.01.012. Epub 2019 Jan 30. PMID: 30825662.
+
 Install the **pyCORN** package.
 
 ```python
