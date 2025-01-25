@@ -4,16 +4,16 @@ This is a Python script to help extracting the data from Unicorn file acquired u
 This repository is based in the great [pyCORN](https://github.com/pyahmed/PyCORN) python library.
 The pyCORN repository contains an amazing [shiny web app](http://pycornweb.appspot.com).
 You can just drag and drop your report.res file from Unicorn software and get your interactive view of chromatogram.
+If you want to customize the elements in your chromatogram, then this Repo can help you out in a easy was.
 
-Install the pycorn package.
+Install the **pyCORN** package.
 
 ```python
 pip install pycorn
 ```
 
-
-Import the module `pc_res3` from pycorn to extract the data from the unicorn file and the module `rc` from matplotlib to use LaTex sythax.
-Load the matplotlib and numpy libraries.
+Import the module `pc_res3` from **pycorn** to extract the data from the unicorn file and the module `rc` from **matplotlib** to use **LaTex** sythax.
+Load the **matplotlib** and **numpy** libraries.
 
 ```python
 from pycorn import pc_res3
@@ -25,7 +25,7 @@ import numpy as np
 rc('text', usetex=True)
 ```
 
-Create an object of the class `pc_res3`. The class pc_res3 is used to parse ÄKTA res files.
+Create an object of the class `pc_res3`. The class pc_res3 is used to parse ÄKTA report.res files.
 
 ```python
 # load the unicorn file from the path
@@ -59,7 +59,7 @@ fraction.pop()
 fraction = [int(i) for i in fraction]
 ```
 
-Now we can plot the data using matplotlib.
+Now we can plot the data using **matplotlib**.
 
 ```python
 plt.plot(elution, absorbance, linewidth=2.0, color = 'steelblue')
