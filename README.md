@@ -45,13 +45,16 @@ There are 2 elements in the unicorn_data, the absorbance (mAu) and the elution v
 unicorn_data = unicorn_file["UV1_280nm"]["data"]
 elution = [elem1 for elem1, elem2 in unicorn_data]
 absorbance = [elem2 for elem1, elem2 in unicorn_data]
-# fraction annotation
+
+# extract the fraction annotation
 fraction_data = unicorn_file["Fractions"]["data"]
 fraction_ellution = [elem1 for elem1, elem2 in fraction_data]
 fraction = [elem2 for elem1, elem2 in fraction_data]
-# remove the last fraction annotation
+
+# remove the last fraction annotation as it has the waste entry
 fraction_ellution.pop()
 fraction.pop()
+
 # coerse the fraction annotation to integer
 fraction = [int(i) for i in fraction]
 ```
@@ -59,7 +62,6 @@ fraction = [int(i) for i in fraction]
 Now we can plot the data using matplotlib.
 
 ```python
-# Plot the data using matplotlib
 plt.plot(elution, absorbance, linewidth=2.0, color = 'steelblue')
 plt.ylabel('Absorbance (mAu)', weight='bold')
 plt.xlabel('Elution volume (mL)', weight='bold')
@@ -73,7 +75,6 @@ plt.savefig('SEC_adult.png', dpi=300)
 We can also add the fraction annotation to the chromatogram.
 
 ```python
-# plot the fraction annotation in the chromatogram
 plt.plot(elution, absorbance, linewidth=2.0, color = 'steelblue')
 plt.ylabel('Absorbance (mAu)', weight='bold')
 plt.xlabel('Elution volume (mL)', weight='bold')
