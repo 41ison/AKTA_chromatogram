@@ -1,11 +1,12 @@
 # AKTA_chromatogram
 This is a Python script to help extracting the data from Unicorn file acquired using ÄKTA purifier and reconstruct the chromatogram.
 
-This repository is based in the great pyCORN python library[https://github.com/pyahmed/PyCORN].
-The pyCORN repository contains an amazing shiny web app[http://pycornweb.appspot.com].
+This repository is based in the great [pyCORN](https://github.com/pyahmed/PyCORN) python library.
+The pyCORN repository contains an amazing [shiny web app](http://pycornweb.appspot.com).
 You can just drag and drop your report.res file from Unicorn software and get your interactive view of chromatogram.
 
 Install the pycorn package.
+
 ```python
 pip install pycorn
 ```
