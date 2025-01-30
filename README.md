@@ -68,7 +68,7 @@ Now we can plot the data using **matplotlib**.
 plt.plot(elution, absorbance, linewidth=2.0, color = 'steelblue')
 plt.ylabel('Absorbance (mAu)', weight='bold')
 plt.xlabel('Elution volume (mL)', weight='bold')
-plt.title(r'SEC of $B. jararaca$ venom')
+plt.title(r'SEC of $B. jararacussu$ venom')
 plt.legend(['280 nm'])
 plt.style.use('default')
 plt.gcf().set_size_inches(10, 5)
