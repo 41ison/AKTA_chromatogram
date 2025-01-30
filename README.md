@@ -74,6 +74,9 @@ plt.style.use('default')
 plt.gcf().set_size_inches(10, 5)
 plt.savefig('SEC_adult.png', dpi=300)
 ```
+<p align="center">
+<img src="https://github.com/41ison/AKTA_chromatogram/blob/main/SEC_Bjararacussu.png" width="500">
+</p>
 
 We can also add the fraction annotation to the chromatogram.
 
